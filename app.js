@@ -2,7 +2,7 @@ let boxes = document.querySelectorAll(".box");
 let resetbtn = document.querySelector("#reset-btn");
 let newGamebtn = document.querySelector("#new-btn");
 let msgcontainer = document.querySelector(".msg-container");
-let msg = document.querySelector("p");
+let msg = document.querySelector("#msg");
 
 let turnO = true; // playerX , playerO
 
@@ -49,7 +49,7 @@ const disableBoxes= () =>{
 
 const enableBoxes= () =>{
     for(let box of boxes){
-        box.disabled = true;
+        box.disabled = false;
         box.innerText = "";
     }
 };
